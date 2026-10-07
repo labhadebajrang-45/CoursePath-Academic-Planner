@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Courses – CoursePath</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-inner"><a class="logo" href="index.html">CoursePath</a>
+            <div class="links"><a href="index.html">Home</a><a class="active" href="courses.html">Courses</a><a
+                    href="planner.html">Planner</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <h1>Course Catalog</h1>
+        <p class="muted">Search courses and add them to your academic planner.</p><input id="search"
+            placeholder="Search by course code or name...">
+        <div id="courseList" class="grid"></div>
+        <section class="section-title">
+            <h2>Prerequisite Directed Graph</h2>
+            <p class="muted">An arrow means the first course is a prerequisite for the next course.</p>
+        </section><svg id="graph" class="graph" viewBox="0 0 850 330"></svg>
+    </main>
+    <footer class="footer">CoursePath – Academic Planner</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

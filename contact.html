@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contact – CoursePath</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-inner"><a class="logo" href="index.html">CoursePath</a>
+            <div class="links"><a href="index.html">Home</a><a href="courses.html">Courses</a><a
+                    href="planner.html">Planner</a><a href="about.html">About</a><a class="active"
+                    href="contact.html">Contact</a></div>
+        </div>
+    </nav>
+    <main class="container">
+        <h1>Contact & Feedback</h1>
+        <p class="muted">Submit feedback. In full setup, the message is stored in MySQL.</p>
+        <div class="card" style="max-width:700px">
+            <form id="feedbackForm"><label>Name</label><input id="name" required><label>Email</label><input id="email"
+                    type="email" required><label>Message</label><textarea id="message" required></textarea><button
+                    class="btn" type="submit">Submit Feedback</button></form>
+            <div id="feedbackMsg" class="notice"></div>
+        </div>
+    </main>
+    <footer class="footer">CoursePath – Academic Planner</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

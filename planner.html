@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Planner – CoursePath</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-inner"><a class="logo" href="index.html">CoursePath</a>
+            <div class="links"><a href="index.html">Home</a><a href="courses.html">Courses</a><a class="active"
+                    href="planner.html">Planner</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <h1>My Academic Planner</h1>
+        <p class="muted">Your selected courses are saved in your browser.</p>
+        <div class="stats">
+            <div class="card"><span class="muted">Selected Courses</span><strong id="totalCourses">0</strong></div>
+            <div class="card"><span class="muted">Total Credits</span><strong id="totalCredits">0</strong></div>
+        </div>
+        <div class="card table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Course</th>
+                        <th>Credits</th>
+                        <th>Semester</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="plannerList"></tbody>
+            </table>
+        </div>
+        <p><a class="btn" href="courses.html">+ Add Courses</a><button class="btn secondary"
+                onclick="localStorage.removeItem('coursepath_plan');renderPlanner()">Clear Planner</button></p>
+    </main>
+    <footer class="footer">CoursePath – Academic Planner</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
